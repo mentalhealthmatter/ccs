@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS 丨 Homepage</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('coolvetica_rg-webfont.woff2') format('woff2'),
+         url('coolvetica_rg-webfont.woff') format('woff');}
+
+.bgvidcon{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    height: 100vh;
+    position: absolute  ;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    opacity: 25%;
+}
+
+.oopstextcon{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.oopstext{
+    position: relative;
+    color:white;
+    padding: 41vh 0 0 0;
+    font-family: coolvetica;
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    background: linear-gradient(to right , #0600ff, #ff2400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 1024px){
+.oopstext{
+    padding: 46vh 0 0 0;
+    font-size: 40px;
+}
+}
+
+@media only screen and (min-width: 1300px){
+.oopstext{
+    padding: 43vh 0 0 0;
+    font-size: 40px;
+}
+}
+</style>
+<body>
+    <div class="bgvidcon"  oncontextmenu="return false">
+        <video muted loop autoplay>
+            <source src="BGVID.mp4">
+        </video>
+    </div>
+    <div class="oopstextcon">
+        <p class="oopstext">
+            Oops, website still under maintenance.<br>Visit our<a class="link" href="https://www.facebook.com/CCSSJDM/" target="_blank"> Facebook Page</a> for more information.
+        </p>
+    </div>
+</body>
+</html>
